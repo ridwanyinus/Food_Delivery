@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+   padding: 0;
+   margin: 0;
+   scroll-behavior: smooth;
+   list-style: none;
+   text-decoration: none;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: "Inter", sans-serif;
+   /* font-family: "Poppins", sans-serif; */
+}
+
+.scale-up-top {
+   -webkit-animation: scale-up-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+   animation: scale-up-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-top {
+   0% {
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+   }
+   100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+   }
+}
+@keyframes scale-up-top {
+   0% {
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+   }
+   100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+   }
+}
+
+@layer utilities {
+   .padding {
+      @apply sm:px-24 px-8 sm:py-20 py-12;
+   }
+   .padding-x {
+      @apply sm:px-20 px-8;
+   }
+   .padding-y {
+      @apply sm:py-24 py-12;
+   }
+
+   .padding-l {
+      @apply sm:pl-16 pl-8;
+   }
+
+   .padding-r {
+      @apply sm:pr-16 pr-8;
+   }
+
+   .padding-t {
+      @apply sm:pt-28 pt-12;
+   }
+
+   .padding-b {
+      @apply sm:pb-24 pb-12;
+   }
+}
