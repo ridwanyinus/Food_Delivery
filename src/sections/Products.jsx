@@ -6,13 +6,12 @@ import sushi from "/images/sushi.svg";
 import quote from "/images/blackQuote.svg";
 import motorcycle from "/images/motorcycle.svg";
 import pasta from "/images/pasta.png";
-
 import salad from "/images/salad.png";
 import desserts from "/images/desserts.png";
 
 const Products = ({ label, imgUrl }) => {
    return (
-      <section className="padding flex-col flex max-xs:justify-center max-xs:items-center w-full">
+      <section className="padding flex-col flex max-xs:justify-center max-xs:items-center w-full" id="product">
          <div className="flex items-center justify-center flex-col pb-8">
             <h1 className="text-dark text-3xl xs:text-4xl sm:text-[46px] font-semibold leading-normal sm:leading-[58px] tracking-[-0.46px] md:w-[622px] text-center pb-2">
                More Than <span className="font-bold text-primary">10,000</span> Dishes To order!

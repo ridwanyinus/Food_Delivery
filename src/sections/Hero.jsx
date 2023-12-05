@@ -5,9 +5,9 @@ import hero from "/images/hero.png";
 
 const Hero = () => {
    return (
-      <section className="px-12 py-20 xl:padding bg-white flex items-start gap-16 xl:gap-20 max-lg:flex-col w-full">
-         <div className="flex-1">
-            <h1 className="text-3xl xs:text-4xl sm:text-5xl  xl:text-[61px] leading-[120%] font-bold sm:w-[585px] text-dark mb-4">Your Favorite Food Delivery Partner</h1>
+      <section className="px-12 py-16 xs:py-20 xl:padding bg-white flex items-start gap-16 xl:gap-20 max-lg:flex-col w-full max-lg:items-center" id="aboutUs">
+         <div className="flex-1 ">
+            <h1 className="text-3xl xs:text-4xl sm:text-5xl  xl:text-[61px] leading-[120%] font-bold sm:w-[585px] text-dark mb-6">Your Favorite Food Delivery Partner</h1>
             <h3 className="text-lg font-normal leading-[167%] tracking-[-0.18px] text-dark sm:w-[528px]">
                The food at your doorstep. Why starve when you have us. You hunger partner. Straight out of the oven to your doorstep.
             </h3>

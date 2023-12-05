@@ -94,9 +94,12 @@ body {
    .text-small::placeholder {
       font-size: 10px;
    }
+   .feedback {
+      font-size: 27px;
+   }
 }
-@media screen and (max-width: 375px) {
-   .ninety-sreen {
-      width: 100%;
+@media screen and (min-width: 1280px) {
+   .contain {
+      width: 40%;
    }
 }

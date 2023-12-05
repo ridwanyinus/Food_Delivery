@@ -4,6 +4,7 @@ import Product from "./sections/Products";
 import Clients from "./sections/Clients";
 import Newsletter from "./sections/Newsletter";
 import Footer from "./sections/Footer";
+import Order from "./sections/Order";
 
 export default function App() {
    return (
@@ -11,9 +12,14 @@ export default function App() {
          <Navbar />
          <Hero />
          <Product />
+         <Order />
          <Clients />
-         <Newsletter />
-         <Footer />
+         <section className="bg-[#FFEFEC] mt-12">
+            <Newsletter />
+         </section>
+         <section className="bg-black ">
+            <Footer />
+         </section>
       </section>
    );
 }

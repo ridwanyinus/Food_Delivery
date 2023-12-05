@@ -1,7 +1,7 @@
 export const navLinks = [
-   { href: "#popular", label: "Restaurants" },
-   { href: "#property", label: "Recipes" },
-   { href: "#contact", label: "About" },
+   { href: "#product", label: "Restaurants" },
+   { href: "#product", label: "Recipes" },
+   { href: "#aboutUs", label: "About" },
    { href: "#aboutUs", label: "Page" },
    { href: "#contact", label: "Contact" },
 ];
@@ -13,7 +13,7 @@ export const footerLinks = [
          { name: "Features ", link: "/", id: "features" },
          { name: "Food Menu", link: "/", id: "food" },
          { name: "Offer ", link: "/", id: "offer" },
-         { name: "Review", link: "/", id: "food" },
+         { name: "Review", link: "/", id: "review" },
          { name: "Rider", link: "/", id: "rider" },
       ],
       id: "quick",

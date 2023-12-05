@@ -8,7 +8,7 @@ import { useState } from "react";
 const Navbar = () => {
    const [toggleMenu, settoggleMenu] = useState(false);
    return (
-      <nav className="flex items-center max-lg:px-10  justify-between lg:justify-around py-4 ">
+      <nav className="flex items-center max-lg:px-10  justify-between lg:justify-around max-lg:py-5 py-4 max-lg:bg-dark">
          <div>
             <a href="/">
                <img src={logo} alt="logo" className="shrink-0" />
@@ -19,7 +19,9 @@ const Navbar = () => {
             {navLinks.map((items) => (
                <ul key={items.label} className="text-[14px] text-dark font-medium leading-[200%]">
                   <li>
-                     <a href={items.href}>{items.label}</a>
+                     <a href={items.href} className="hover:border-b-2 hover:border-dark hover:text-primary">
+                        {items.label}
+                     </a>
                   </li>
                </ul>
             ))}
@@ -33,7 +35,7 @@ const Navbar = () => {
          </div>
 
          <div className="lg:hidden relative">
-            {toggleMenu ? <IoClose size={26} color="#000" onClick={() => settoggleMenu(false)} /> : <FiAlignRight size={26} color="#000" onClick={() => settoggleMenu(true)} />}
+            {toggleMenu ? <IoClose size={26} color="#fff" onClick={() => settoggleMenu(false)} /> : <FiAlignRight size={28} color="#fff" onClick={() => settoggleMenu(true)} />}
 
             {toggleMenu && (
                <ul className="text-[14px] text-white font-medium leading-[200%] w-[180px] px-4 py-4 bg-dark absolute top-[40px] right-0   rounded scale-up-top ">
