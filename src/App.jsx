@@ -7,7 +7,7 @@ import Footer from "./sections/Footer";
 
 export default function App() {
    return (
-      <section className="font-inter">
+      <section className="font-inter bg-white">
          <Navbar />
          <Hero />
          <Product />

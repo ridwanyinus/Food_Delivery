@@ -25,11 +25,11 @@ const Navbar = () => {
             ))}
          </div>
 
-         <div className="flex text-[16px] font-semibold leading-[175%] gap-3 items-center max-lg:hidden">
+         <div className="flex text-[16px] font-semibold leading-[175%] gap-4 items-center max-lg:hidden">
             <a href="/" className="text-dark">
                Login
             </a>
-            <button className="text-white bg-[#E94339] rounded-3xl py-1 px-3 hover:bg-primary">Sign Up</button>
+            <button className="text-white bg-[#E94339] rounded-3xl py-1 px-4 hover:bg-primary">Sign Up</button>
          </div>
 
          <div className="lg:hidden relative">
@@ -42,6 +42,12 @@ const Navbar = () => {
                         <a href={items.href}>{items.label}</a>
                      </li>
                   ))}
+                  <div className="flex flex-col text-[16px] font-semibold leading-[175%] gap-3  lg:hidden pt-1">
+                     <a href="/" className=" text-[#AFAFAF]">
+                        Login
+                     </a>
+                     <button className="text-white bg-[#E94339] rounded-3xl py-1 px-3 hover:bg-primary">Sign Up</button>
+                  </div>
                </ul>
             )}
          </div>

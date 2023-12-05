@@ -79,3 +79,24 @@ body {
       @apply sm:pb-24 pb-12;
    }
 }
+
+.button-shadow {
+   box-shadow: 0px 10px 20px -10px rgba(234, 234, 234, 0.4);
+}
+
+@media screen and (max-width: 375px) {
+   .ninety-sreen {
+      width: 100%;
+   }
+   .text-small {
+      font-size: 10px;
+   }
+   .text-small::placeholder {
+      font-size: 10px;
+   }
+}
+@media screen and (max-width: 375px) {
+   .ninety-sreen {
+      width: 100%;
+   }
+}
